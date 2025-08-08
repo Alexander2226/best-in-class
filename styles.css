@@ -1,0 +1,20 @@
+
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+header { display: flex; justify-content: space-between; align-items: center; padding: 10px; background: #0057a0; color: white; }
+header .logo { display: flex; align-items: center; }
+header .logo img { height: 50px; margin-right: 10px; }
+header .contacts a { color: white; text-decoration: none; font-size: 18px; }
+.subjects { display: flex; justify-content: center; gap: 15px; padding: 20px; }
+.subject-btn { padding: 10px 20px; font-size: 18px; border: none; background: #ff9800; color: white; cursor: pointer; transition: 0.3s; border-radius: 5px; }
+.subject-btn:hover { background: #e68900; }
+.reviews { text-align: center; padding: 20px; }
+.slider { position: relative; width: 100%; max-width: 500px; margin: auto; overflow: hidden; }
+.slide { display: none; }
+.slide.active { display: block; animation: fadeIn 1s; }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+.modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); justify-content: center; align-items: center; }
+.modal-content { background: white; padding: 20px; border-radius: 10px; width: 90%; max-width: 500px; animation: fadeIn 0.5s; }
+.close { float: right; font-size: 24px; cursor: pointer; }
+.class-buttons button { margin: 5px; padding: 8px 12px; background: #2196f3; color: white; border: none; border-radius: 5px; cursor: pointer; }
+.price { margin-top: 15px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; background: #f9f9f9; }
+.hidden { display: none; }
